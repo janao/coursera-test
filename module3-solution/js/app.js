@@ -55,7 +55,7 @@
         var foundItems = null;
         service.allItems = result.data.menu_items;
         for (var i = 0; i < service.allItems.length; ++i) {
-            if(service.allItems[i].description.toLowerCase().includes(searchTerm.toLowerCase())){
+            if((searchTerm!=null)&&(searchTerm.length>0)&&service.allItems[i].description.toLowerCase().includes(searchTerm.toLowerCase())){
               if(foundItems==null){
                 foundItems = [];
               }
