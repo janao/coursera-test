@@ -11,8 +11,12 @@
     var ddo = {
       templateUrl: 'foundItems.html',
       scope:{
-        items: '<foundItms',
-      }
+        items: '<',
+        onRemove: '&'
+      },
+      controller: NarrowItDownController,
+      controllerAs: 'narrowItDownCtrl',
+      bindToController: true
     };
     return ddo;
   }

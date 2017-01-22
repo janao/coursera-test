@@ -9,12 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="item in items.foundItems">
+    <tr ng-repeat="item in narrowItDownCtrl.items">
       <th scope="row">{{$index}}</th>
       <td>{{ item.name }}</td>
       <td>{{ item.short_name }}</td>
       <td>{{ item.description }}</td>
-      <td><button class="btn btn-xs" ng-click="items.remove($index);">Don't want this one!</button></td>
+      <td><button class="btn btn-xs" ng-click="narrowItDownCtrl.onRemove({index: $index});">Don't want this one!</button></td>
     </tr>
   </tbody>
 </table>

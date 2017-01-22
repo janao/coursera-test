@@ -18,8 +18,8 @@
       <button class="btn btn-primary" ng-click="narrowItDownCtrl.search();">Narrow It Down For Me!</button>
     </div>
   <br/><br/><br/>
-  
-  <found-items found-itms="narrowItDownCtrl"></found-items>
+
+  <found-items items="narrowItDownCtrl.foundItems" on-remove="narrowItDownCtrl.remove(index)"></found-items>
   </div>
 </body>
 </html>
