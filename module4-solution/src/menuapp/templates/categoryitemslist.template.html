@@ -1,0 +1,6 @@
+<h3>Menu Items of the Category {{$ctrl.selectedCategory}}</h3>
+<ul>
+  <li ng-repeat="categoryItem in $ctrl.categoryItems">
+    {{categoryItem.short_name}} - {{ categoryItem.name }} - {{ categoryItem.description }}
+  </li>
+</ul>
